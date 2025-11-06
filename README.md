@@ -2,7 +2,6 @@
 
 ### 🚀 Overview
 Welcome to my unified tech portfolio that brings together my passion for **Cybersecurity**, **Data Analytics**, and the **Internet of Things (IoT)**.
-
 My portfolio highlights how I combine these three domains to create **secure**, **data-driven**, and **intelligent systems** that address global challenges.
 
 ---
@@ -60,16 +59,6 @@ My portfolio highlights how I combine these three domains to create **secure**, 
 
 ---
 
-## 🎓 Certifications & Achievements
-- 🧠 **CCNA: Introduction to Networks** – Cisco (2021)  
-- 📊 **Data Analyst with Python** – DataCamp (2024)  
-- ☁️ **AWSome Day Online Conference** – AWS (2024)  
-- 🏆 **Gold Level – Accenture iAspire Program**  
-- 🥇 **1st Prize – Techno-Cultural Fashion Show**  
-- 💡 **CTF Qualifier – Great AppSec Hackathon 2024**  
-
----
-
 ## 🌍 About Me
 Hi, I’m **Joel**, an aspiring IT specialist passionate about integrating **IoT**, **Data Analytics**, and **Cybersecurity** to build smart and secure systems that promote sustainability and innovation.
 
@@ -82,6 +71,7 @@ Hi, I’m **Joel**, an aspiring IT specialist passionate about integrating **IoT
 - 🌐 Website:   https://cyber-trinity.github.io/joeldjatassiba/
 - 💼 LinkedIn:  https://www.linkedin.com/in/joeldjatassiba/
 - 🧠 GitHub:    https://github.com/Cyber-Trinity
+- 📊 Kaggle :   https://www.kaggle.com/cybertrinity
 
 ---
 
