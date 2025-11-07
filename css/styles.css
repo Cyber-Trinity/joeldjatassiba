@@ -1089,22 +1089,19 @@ input[type='checkbox'] {
 }
 
 #projects .details-btn {
-	background: #f8f9fa;
-	color: #2563eb;
+	background: #0b36a8;
+	color: #ffffff;
 	padding: 5px 10px;
 	border-radius: 5px;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	transition: all 0.3s ease;
-	border: 2px solid #2563eb;
 }
 
 #projects .details-btn:hover {
 	background: #2563eb;
 	color: white;
-	transform: scale(1.05);
-	border: 2px solid #2563eb;
 }
 
 /* View More Button */
@@ -1128,7 +1125,6 @@ input[type='checkbox'] {
 .btn-view-more:hover {
 	background: #f8f9fa;
 	color: #2563eb;
-	transform: scale(1.05);
 }
 
 /* Hidden Projects */
