@@ -1113,13 +1113,14 @@ input[type='checkbox'] {
 	border: 2px solid #2563eb;
 	padding: 12px 30px;
 	border-radius: 25px;
-	/* Rounded shape */
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	display: inline-block;
-	text-decoration: none;
+	display: none;
+	/* Hidden by default */
+	margin: 20px auto;
+	/* Center the button */
 	text-align: center;
 }
 

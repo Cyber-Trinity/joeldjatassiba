@@ -204,16 +204,71 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // View more button functionality
-    document.addEventListener("DOMContentLoaded", function() {
-        const viewMoreButton = document.getElementById("view-more");
-        const hiddenProjects = document.querySelectorAll(".project-item.hidden");
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+        const projectItems = document.querySelectorAll('.project-item');
+        const viewMoreBtn = document.getElementById('view-more');
+        const maxVisibleStep = 6;
+        let activeFilter = 'all';
+        let visibleCount = maxVisibleStep;
     
-        viewMoreButton.addEventListener("click", function() {
-            hiddenProjects.forEach(project => {
-                project.classList.remove("hidden");
+        // Helper: filter visible projects
+        function getFilteredProjects() {
+            return Array.from(projectItems).filter(item =>
+                activeFilter === 'all' || item.getAttribute('data-category') === activeFilter
+            );
+        }
+    
+        // Update displayed projects based on visibleCount
+        function updateProjects() {
+            const filtered = getFilteredProjects();
+    
+            // Hide all projects first
+            projectItems.forEach(item => {
+                item.style.display = 'none';
+                item.classList.add('hidden');
             });
-            viewMoreButton.style.display = "none";
+    
+            // Show only visibleCount items for the active filter
+            filtered.forEach((item, index) => {
+                if (index < visibleCount) {
+                    item.style.display = 'block';
+                    item.classList.remove('hidden');
+                }
+            });
+    
+            // Show/hide "View More" button
+            if (visibleCount < filtered.length) {
+                viewMoreBtn.style.display = 'inline-block';
+                // Place the button after the last visible project
+                const lastVisible = filtered[Math.min(visibleCount, filtered.length) - 1];
+                if (lastVisible && lastVisible.parentNode) {
+                    lastVisible.parentNode.insertBefore(viewMoreBtn, lastVisible.nextSibling);
+                }
+            } else {
+                viewMoreBtn.style.display = 'none';
+            }
+        }
+    
+        // Category button click
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                activeFilter = this.getAttribute('data-filter');
+                visibleCount = maxVisibleStep; // Reset to first 6
+                updateProjects();
+            });
         });
+    
+        // View More button click
+        viewMoreBtn.addEventListener('click', function () {
+            visibleCount += maxVisibleStep;
+            updateProjects();
+        });
+    
+        // Initialize first load
+        updateProjects();
     });
     
     
