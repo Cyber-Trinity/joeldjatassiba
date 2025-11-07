@@ -113,7 +113,7 @@
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     const filterButtons = document.querySelectorAll(".filter-buttons .btn");
     const projectItems = document.querySelectorAll(".project-item");
 
@@ -269,12 +269,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
         // Initialize first load
         updateProjects();
-    });
-    
+    });   
     
 
     // Contact Form - Open user's email client with prefilled message
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault(); // Prevent default form submission
 
     // Get form values
