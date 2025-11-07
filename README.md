@@ -30,5 +30,3 @@ My portfolio highlights how I combine these three domains to create **secure**, 
 - Smart Environment & Automation Systems  
 - Real-time Data Monitoring  
 - Edge Computing & Communication Protocols  
-
----
