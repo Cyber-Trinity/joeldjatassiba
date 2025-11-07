@@ -188,6 +188,9 @@
         const filterParam = urlParams.get("filter");
         if (filterParam) {
             filterProjects(filterParam);
+        } else {
+            // Initialize with "all" category
+            filterProjects("all");
         }
     
         // View More button click
@@ -196,6 +199,7 @@
             updateProjects();
         });
     });
+    
     
 
     // =============================================
