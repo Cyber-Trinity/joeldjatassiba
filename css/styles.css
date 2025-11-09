@@ -750,6 +750,11 @@ input[type='checkbox'] {
 	margin-bottom: 0.125rem;
 }
 
+#resume:hover {
+	color: #0b36a8;
+	text-decoration: underline;
+}
+
 /* ========================= */
 /* Services Section   */
 /* ========================= */
